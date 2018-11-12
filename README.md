@@ -105,5 +105,29 @@ working...
 
 ```
 
+## 로그인
+`POST` API를 하나 더 만들어서 테스트 해보자.
+```json
+{
+  "email": "email@email.com",
+  "passworld": "1234"
+}
+```
+Request Body에 위와 같은 내용을 담아 `POST` 요청을 보내면 프로필 정보를 알려주는 로그인 API가 있다고 가정하자.
+리턴값은 json으로 아래와 같은 형태로 보내줄 것이다.
+```json
+{
+  "id": "id",
+  "email": "email@email.com",
+  "name": "Sung",
+  "age": "undefined"
+}
+```
+
+테스트 코드는 다음과 같이 작성한다.
+```javascript
+
+```
+
 
 출처: https://seokjun.kim/node-js-tdd/
