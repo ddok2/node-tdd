@@ -24,6 +24,18 @@ $ vi .babelrc
 }
 ```
 
+## 시작하기
+`import express from 'expresss';'` 부터 시작해야할 것 같지만, 
+우선 서버 시작과 테스트 러닝 스크립트를 `package.json` 추가하자.
+```json
+{
+    "scripts": {
+        "test": "npx mocha --compilers js:babel-register --recursive ./**/*.spec.js",
+        "start": "npx babel-node index.js"
+    }
+}
+```
+
 
 
 출처: https://seokjun.kim/node-js-tdd/
